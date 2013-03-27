@@ -1,7 +1,7 @@
 var test = require('tape');
 var charSize = require('../');
 
-test('character sizes', function () {
+test('character sizes', function (t) {
     t.plan(5);
     var size = charSize(document.body);
     t.equal(typeof size.width, 'number');
