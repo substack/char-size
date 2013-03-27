@@ -9,7 +9,6 @@ module.exports = function (target) {
     
     var div = document.createElement('div');
     div.style.display = 'inline-block';
-    div.style['font-family'] = 'monospace';
     div.appendChild(document.createTextNode('x'));
     container.appendChild(div);
     
