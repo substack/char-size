@@ -1,5 +1,10 @@
-module.exports = function (target) {
-    if (!target) target = document.body;
+module.exports = function (opts) {
+    if (opts && typeof opts.appendChild === 'function') {
+        opts = { target: opts }
+    }
+    if (!opts) opts = {};
+    var target = opts.target || document.body;
+    var chr = opts.chr || 'x';
     
     var container = document.createElement('div');
     container.style.width = '0px';
@@ -9,7 +14,7 @@ module.exports = function (target) {
     
     var div = document.createElement('div');
     div.style.display = 'inline-block';
-    div.appendChild(document.createTextNode('x'));
+    div.appendChild(document.createTextNode(chr));
     container.appendChild(div);
     
     var s = window.getComputedStyle(div);
