@@ -1,0 +1,34 @@
+{
+    "name": "char-size",
+    "version": "0.0.0",
+    "description": "return the size in pixels of a single character",
+    "main": "index.js",
+    "devDependencies": {
+        "tap": "~0.4.0",
+        "tape": "~0.3.0"
+    },
+    "scripts": {
+        "test": "tap test/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/substack/char-size.git"
+    },
+    "homepage": "https://github.com/substack/char-size",
+    "keywords": [
+        "html",
+        "css",
+        "browser",
+        "browserify",
+        "font",
+        "monospace",
+        "dom",
+        "fixed-width"
+    ],
+    "author": {
+        "name": "James Halliday",
+        "email": "mail@substack.net",
+        "url": "http://substack.net"
+    },
+    "license": "MIT"
+}
