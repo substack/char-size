@@ -10,6 +10,17 @@
     "scripts": {
         "test": "tap test/*.js"
     },
+    "testling" : {
+        "files" : "test/*.js",
+        "browsers" : [
+            "ie/8..latest",
+            "chrome/24..latest",
+            "firefox/18..latest",
+            "safari/latest",
+            "opera/latest",
+            "iphone/6", "ipad/6"
+        ]
+    },
     "repository": {
         "type": "git",
         "url": "git://github.com/substack/char-size.git"

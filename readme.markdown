@@ -2,6 +2,8 @@
 
 return the size in pixels of a single character
 
+[![browser support](https://ci.testling.com/substack/char-size.png)](http://ci.testling.com/substack/char-size)
+
 This is useful for writing column-sensitive wrapping code, particularly for
 fixed-width fonts.
 
